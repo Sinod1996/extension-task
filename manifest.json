@@ -1,0 +1,15 @@
+{
+  "name": "Content Script",
+  "version": "0.01",
+  "description": "Change Page Contents",
+  "browser_action" : {
+    "default_popup" : "popup.html"
+  },
+  "content_scripts" : [{
+    "matches": ["https://example.com/"],
+    "js" : ["content.js"],
+    "css" : ["styles.css"],
+    "run_at" : "document_end"
+  }],
+  "manifest_version": 2
+}
